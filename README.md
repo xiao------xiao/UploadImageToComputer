@@ -1,5 +1,5 @@
 # UploadIphoneImageToComputer
-同步Iphone手机图片到电脑是不是很慢呢，通过这个demo可以实现1分钟同步所有Iphone图片和视频，还能删除手机里的原图，大大缩减手机内存。
+通过检索iphone手机相册里的图片和视频并上传图片和视频到服务器,类似于照片里的同步功能，通过Mac电脑里的照片应用下载Iphone手机图片和视频是不是很慢呢，通过这个demo可以实现1分钟同步所有Iphone图片和视频，还能删除手机里的原图，大大缩减手机内存。
 
 基本信息:Xcode 8.1  基本库 Photos.framework 
 
