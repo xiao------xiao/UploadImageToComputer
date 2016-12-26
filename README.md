@@ -1,6 +1,9 @@
 # UploadIphoneImageToComputer
 同步Iphone手机图片到电脑是不是很慢呢，通过这个demo可以实现1分钟同步所有Iphone图片和视频，还能删除手机里的原图，大大缩减手机内存。
 
+
+基本信息:Xcode 8.1  基本库 Photos.framework 
+
 1.首先用安装nodejs，怎么安装就不说了,网上一大堆，项目中有我的本地nodejs文件，uploadMultImage.js
 
 2.开启nodejs  ，在终端中，cd 到指定目录，然后 node  uploadMultImage.js 
