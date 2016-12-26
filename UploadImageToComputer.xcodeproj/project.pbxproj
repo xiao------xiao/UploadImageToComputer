@@ -15,8 +15,6 @@
 		189354681E0BA1FD006073EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189354671E0BA1FD006073EB /* Assets.xcassets */; };
 		1893546B1E0BA1FD006073EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189354691E0BA1FD006073EB /* LaunchScreen.storyboard */; };
 		189354741E0BA89C006073EB /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189354731E0BA89C006073EB /* Photos.framework */; };
-		189354781E0BACDF006073EB /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 189354761E0BACDF006073EB /* CustomCollectionViewCell.m */; };
-		189354791E0BACDF006073EB /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189354771E0BACDF006073EB /* CustomCollectionViewCell.xib */; };
 		1893547B1E0BADD4006073EB /* hello.png in Resources */ = {isa = PBXBuildFile; fileRef = 1893547A1E0BADD4006073EB /* hello.png */; };
 		276BF59C78A871D938B3F942 /* libPods-UploadIphoneImageToComputer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCFC9155EBDE9E90CEE2F00 /* libPods-UploadIphoneImageToComputer.a */; };
 /* End PBXBuildFile section */
@@ -24,7 +22,7 @@
 /* Begin PBXFileReference section */
 		1891EAED1E0FC85E000066A6 /* ModelImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelImageInfo.h; sourceTree = "<group>"; };
 		1891EAEE1E0FC85E000066A6 /* ModelImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelImageInfo.m; sourceTree = "<group>"; };
-		189354581E0BA1FD006073EB /* UploadIphoneImageToComputer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UploadIphoneImageToComputer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		189354581E0BA1FD006073EB /* UploadImageToComputer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UploadImageToComputer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1893545C1E0BA1FD006073EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1893545E1E0BA1FD006073EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1893545F1E0BA1FD006073EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -35,9 +33,6 @@
 		1893546A1E0BA1FD006073EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1893546C1E0BA1FD006073EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		189354731E0BA89C006073EB /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
-		189354751E0BACDF006073EB /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewCell.h; sourceTree = "<group>"; };
-		189354761E0BACDF006073EB /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
-		189354771E0BACDF006073EB /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		1893547A1E0BADD4006073EB /* hello.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hello.png; sourceTree = "<group>"; };
 		84E965E54C90166FB66803B6 /* Pods-UploadIphoneImageToComputer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UploadIphoneImageToComputer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UploadIphoneImageToComputer/Pods-UploadIphoneImageToComputer.debug.xcconfig"; sourceTree = "<group>"; };
 		D0D97E472478D0DFB58304F5 /* Pods-UploadIphoneImageToComputer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UploadIphoneImageToComputer.release.xcconfig"; path = "Pods/Target Support Files/Pods-UploadIphoneImageToComputer/Pods-UploadIphoneImageToComputer.release.xcconfig"; sourceTree = "<group>"; };
@@ -60,7 +55,7 @@
 		1893544F1E0BA1FD006073EB = {
 			isa = PBXGroup;
 			children = (
-				1893545A1E0BA1FD006073EB /* UploadIphoneImageToComputer */,
+				1893545A1E0BA1FD006073EB /* UploadImageToComputer */,
 				189354591E0BA1FD006073EB /* Products */,
 				189354721E0BA89B006073EB /* Frameworks */,
 				BC482E1653F0FE84D8A58225 /* Pods */,
@@ -70,12 +65,12 @@
 		189354591E0BA1FD006073EB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				189354581E0BA1FD006073EB /* UploadIphoneImageToComputer.app */,
+				189354581E0BA1FD006073EB /* UploadImageToComputer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1893545A1E0BA1FD006073EB /* UploadIphoneImageToComputer */ = {
+		1893545A1E0BA1FD006073EB /* UploadImageToComputer */ = {
 			isa = PBXGroup;
 			children = (
 				1893545E1E0BA1FD006073EB /* AppDelegate.h */,
@@ -88,12 +83,10 @@
 				189354691E0BA1FD006073EB /* LaunchScreen.storyboard */,
 				1893546C1E0BA1FD006073EB /* Info.plist */,
 				1893545B1E0BA1FD006073EB /* Supporting Files */,
-				189354751E0BACDF006073EB /* CustomCollectionViewCell.h */,
-				189354761E0BACDF006073EB /* CustomCollectionViewCell.m */,
-				189354771E0BACDF006073EB /* CustomCollectionViewCell.xib */,
 				1891EAED1E0FC85E000066A6 /* ModelImageInfo.h */,
 				1891EAEE1E0FC85E000066A6 /* ModelImageInfo.m */,
 			);
+			name = UploadImageToComputer;
 			path = UploadIphoneImageToComputer;
 			sourceTree = "<group>";
 		};
@@ -126,9 +119,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		189354571E0BA1FD006073EB /* UploadIphoneImageToComputer */ = {
+		189354571E0BA1FD006073EB /* UploadImageToComputer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1893546F1E0BA1FD006073EB /* Build configuration list for PBXNativeTarget "UploadIphoneImageToComputer" */;
+			buildConfigurationList = 1893546F1E0BA1FD006073EB /* Build configuration list for PBXNativeTarget "UploadImageToComputer" */;
 			buildPhases = (
 				B6D58EAD1F5D75D8C34FA42E /* [CP] Check Pods Manifest.lock */,
 				189354541E0BA1FD006073EB /* Sources */,
@@ -141,9 +134,9 @@
 			);
 			dependencies = (
 			);
-			name = UploadIphoneImageToComputer;
+			name = UploadImageToComputer;
 			productName = UploadIphoneImageToComputer;
-			productReference = 189354581E0BA1FD006073EB /* UploadIphoneImageToComputer.app */;
+			productReference = 189354581E0BA1FD006073EB /* UploadImageToComputer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -157,12 +150,11 @@
 				TargetAttributes = {
 					189354571E0BA1FD006073EB = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 25D3W5G6L9;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 189354531E0BA1FD006073EB /* Build configuration list for PBXProject "UploadIphoneImageToComputer" */;
+			buildConfigurationList = 189354531E0BA1FD006073EB /* Build configuration list for PBXProject "UploadImageToComputer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -175,7 +167,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				189354571E0BA1FD006073EB /* UploadIphoneImageToComputer */,
+				189354571E0BA1FD006073EB /* UploadImageToComputer */,
 			);
 		};
 /* End PBXProject section */
@@ -189,7 +181,6 @@
 				1893546B1E0BA1FD006073EB /* LaunchScreen.storyboard in Resources */,
 				189354681E0BA1FD006073EB /* Assets.xcassets in Resources */,
 				189354661E0BA1FD006073EB /* Main.storyboard in Resources */,
-				189354791E0BACDF006073EB /* CustomCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +243,6 @@
 				189354601E0BA1FD006073EB /* AppDelegate.m in Sources */,
 				1891EAEF1E0FC85E000066A6 /* ModelImageInfo.m in Sources */,
 				1893545D1E0BA1FD006073EB /* main.m in Sources */,
-				189354781E0BACDF006073EB /* CustomCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,11 +363,11 @@
 			baseConfigurationReference = 84E965E54C90166FB66803B6 /* Pods-UploadIphoneImageToComputer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 25D3W5G6L9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = UploadIphoneImageToComputer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.niit.co.UploadIphoneImageToComputer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coco.UploadImageToComputer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -388,11 +378,11 @@
 			baseConfigurationReference = D0D97E472478D0DFB58304F5 /* Pods-UploadIphoneImageToComputer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 25D3W5G6L9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = UploadIphoneImageToComputer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.niit.co.UploadIphoneImageToComputer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coco.UploadImageToComputer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -401,7 +391,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		189354531E0BA1FD006073EB /* Build configuration list for PBXProject "UploadIphoneImageToComputer" */ = {
+		189354531E0BA1FD006073EB /* Build configuration list for PBXProject "UploadImageToComputer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1893546D1E0BA1FD006073EB /* Debug */,
@@ -410,7 +400,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1893546F1E0BA1FD006073EB /* Build configuration list for PBXNativeTarget "UploadIphoneImageToComputer" */ = {
+		1893546F1E0BA1FD006073EB /* Build configuration list for PBXNativeTarget "UploadImageToComputer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				189354701E0BA1FD006073EB /* Debug */,

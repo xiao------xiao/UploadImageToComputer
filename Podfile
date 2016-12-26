@@ -1,5 +1,5 @@
 
-target 'UploadIphoneImageToComputer' do
+target 'UploadImageToComputer' do
 
 pod 'AFNetworking'
 

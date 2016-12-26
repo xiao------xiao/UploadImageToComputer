@@ -27,10 +27,7 @@
 @end
 
 @implementation ViewController
-// 注意const的位置
-static NSString *const cellId = @"CustomCollectionViewCell";
-static NSString *const headerId = @"headerId";
-static NSString *const footerId = @"footerId";
+
 
 
 - (void)viewDidLoad {
