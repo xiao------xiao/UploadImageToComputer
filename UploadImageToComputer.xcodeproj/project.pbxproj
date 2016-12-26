@@ -7,40 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18329CD41E10EF1A00786F3C /* ModelImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 18329CC21E10EF1A00786F3C /* ModelImageInfo.m */; };
-		18329CD51E10EF1A00786F3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18329CC41E10EF1A00786F3C /* ViewController.m */; };
-		18329CD71E10EF1A00786F3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18329CC71E10EF1A00786F3C /* AppDelegate.m */; };
-		18329CD81E10EF1A00786F3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18329CC81E10EF1A00786F3C /* main.m */; };
-		18329CD91E10EF1A00786F3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18329CCB1E10EF1A00786F3C /* LaunchScreen.storyboard */; };
-		18329CDA1E10EF1A00786F3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18329CCD1E10EF1A00786F3C /* Main.storyboard */; };
-		18329CDC1E10EF1A00786F3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18329CD11E10EF1A00786F3C /* Assets.xcassets */; };
-		18329CDD1E10EF1A00786F3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18329CD21E10EF1A00786F3C /* Info.plist */; };
-		1893545D1E0BA1FD006073EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1893545C1E0BA1FD006073EB /* main.m */; };
-		189354661E0BA1FD006073EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189354641E0BA1FD006073EB /* Main.storyboard */; };
-		1893546B1E0BA1FD006073EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189354691E0BA1FD006073EB /* LaunchScreen.storyboard */; };
+		18329CEE1E10F63600786F3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18329CE01E10F63600786F3C /* AppDelegate.m */; };
+		18329CEF1E10F63600786F3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18329CE11E10F63600786F3C /* Info.plist */; };
+		18329CF01E10F63600786F3C /* ModelImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 18329CE31E10F63600786F3C /* ModelImageInfo.m */; };
+		18329CF11E10F63600786F3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18329CE51E10F63600786F3C /* ViewController.m */; };
+		18329CF31E10F63600786F3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18329CE71E10F63600786F3C /* main.m */; };
+		18329CF41E10F63600786F3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18329CE81E10F63600786F3C /* Assets.xcassets */; };
+		18329CF51E10F63600786F3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18329CEA1E10F63600786F3C /* LaunchScreen.storyboard */; };
+		18329CF61E10F63600786F3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18329CEC1E10F63600786F3C /* Main.storyboard */; };
+		18329CF91E10F6B900786F3C /* Pods-UploadImageToComputer.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18329CF71E10F6B900786F3C /* Pods-UploadImageToComputer.release.xcconfig */; };
+		18329CFA1E10F6B900786F3C /* Pods-UploadImageToComputer.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 18329CF81E10F6B900786F3C /* Pods-UploadImageToComputer.debug.xcconfig */; };
 		189354741E0BA89C006073EB /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189354731E0BA89C006073EB /* Photos.framework */; };
-		276BF59C78A871D938B3F942 /* libPods-UploadIphoneImageToComputer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCFC9155EBDE9E90CEE2F00 /* libPods-UploadIphoneImageToComputer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18329CC21E10EF1A00786F3C /* ModelImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModelImageInfo.m; path = "../../../../../Users/apple/Documents/hello swift/2016.11/UploadIphoneImageToComputer/UploadIphoneImageToComputer/ModelImageInfo.m"; sourceTree = "<group>"; };
-		18329CC31E10EF1A00786F3C /* ModelImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModelImageInfo.h; path = "../../../../../Users/apple/Documents/hello swift/2016.11/UploadIphoneImageToComputer/UploadIphoneImageToComputer/ModelImageInfo.h"; sourceTree = "<group>"; };
-		18329CC41E10EF1A00786F3C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "../../../../../Users/apple/Documents/hello swift/2016.11/UploadIphoneImageToComputer/UploadIphoneImageToComputer/ViewController.m"; sourceTree = "<group>"; };
-		18329CC61E10EF1A00786F3C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "../../../../../Users/apple/Documents/hello swift/2016.11/UploadIphoneImageToComputer/UploadIphoneImageToComputer/AppDelegate.h"; sourceTree = "<group>"; };
-		18329CC71E10EF1A00786F3C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "../../../../../Users/apple/Documents/hello swift/2016.11/UploadIphoneImageToComputer/UploadIphoneImageToComputer/AppDelegate.m"; sourceTree = "<group>"; };
-		18329CC81E10EF1A00786F3C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "../../../../../Users/apple/Documents/hello swift/2016.11/UploadIphoneImageToComputer/UploadIphoneImageToComputer/main.m"; sourceTree = "<group>"; };
-		18329CC91E10EF1A00786F3C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "../../../../../Users/apple/Documents/hello swift/2016.11/UploadIphoneImageToComputer/UploadIphoneImageToComputer/ViewController.h"; sourceTree = "<group>"; };
-		18329CCC1E10EF1A00786F3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		18329CCE1E10EF1A00786F3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
-		18329CD11E10EF1A00786F3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../../Users/apple/Documents/hello swift/2016.11/UploadIphoneImageToComputer/UploadIphoneImageToComputer/Assets.xcassets"; sourceTree = "<group>"; };
-		18329CD21E10EF1A00786F3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../../../../Users/apple/Documents/hello swift/2016.11/UploadIphoneImageToComputer/UploadIphoneImageToComputer/Info.plist"; sourceTree = "<group>"; };
+		18329CDF1E10F63600786F3C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18329CE01E10F63600786F3C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18329CE11E10F63600786F3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18329CE21E10F63600786F3C /* ModelImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelImageInfo.h; sourceTree = "<group>"; };
+		18329CE31E10F63600786F3C /* ModelImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelImageInfo.m; sourceTree = "<group>"; };
+		18329CE41E10F63600786F3C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18329CE51E10F63600786F3C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18329CE71E10F63600786F3C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18329CE81E10F63600786F3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18329CEB1E10F63600786F3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18329CED1E10F63600786F3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		18329CF71E10F6B900786F3C /* Pods-UploadImageToComputer.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-UploadImageToComputer.release.xcconfig"; path = "Pods/Target Support Files/Pods-UploadImageToComputer/Pods-UploadImageToComputer.release.xcconfig"; sourceTree = "<group>"; };
+		18329CF81E10F6B900786F3C /* Pods-UploadImageToComputer.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-UploadImageToComputer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UploadImageToComputer/Pods-UploadImageToComputer.debug.xcconfig"; sourceTree = "<group>"; };
 		189354581E0BA1FD006073EB /* UploadImageToComputer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UploadImageToComputer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1893545C1E0BA1FD006073EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		189354651E0BA1FD006073EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1893546A1E0BA1FD006073EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		189354731E0BA89C006073EB /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
-		84E965E54C90166FB66803B6 /* Pods-UploadIphoneImageToComputer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UploadIphoneImageToComputer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UploadIphoneImageToComputer/Pods-UploadIphoneImageToComputer.debug.xcconfig"; sourceTree = "<group>"; };
-		D0D97E472478D0DFB58304F5 /* Pods-UploadIphoneImageToComputer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UploadIphoneImageToComputer.release.xcconfig"; path = "Pods/Target Support Files/Pods-UploadIphoneImageToComputer/Pods-UploadIphoneImageToComputer.release.xcconfig"; sourceTree = "<group>"; };
+		5A761BB55D47193C7E4D3967 /* libPods-UploadImageToComputer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UploadImageToComputer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFCFC9155EBDE9E90CEE2F00 /* libPods-UploadIphoneImageToComputer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UploadIphoneImageToComputer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -50,21 +46,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				189354741E0BA89C006073EB /* Photos.framework in Frameworks */,
-				276BF59C78A871D938B3F942 /* libPods-UploadIphoneImageToComputer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18329CCA1E10EF1A00786F3C /* Base.lproj */ = {
+		18329CE91E10F63600786F3C /* Base.lproj */ = {
 			isa = PBXGroup;
 			children = (
-				18329CCB1E10EF1A00786F3C /* LaunchScreen.storyboard */,
-				18329CCD1E10EF1A00786F3C /* Main.storyboard */,
+				18329CEA1E10F63600786F3C /* LaunchScreen.storyboard */,
+				18329CEC1E10F63600786F3C /* Main.storyboard */,
 			);
-			name = Base.lproj;
-			path = "../../../../../Users/apple/Documents/hello swift/2016.11/UploadIphoneImageToComputer/UploadIphoneImageToComputer/Base.lproj";
+			path = Base.lproj;
 			sourceTree = "<group>";
 		};
 		1893544F1E0BA1FD006073EB = {
@@ -88,28 +82,24 @@
 		1893545A1E0BA1FD006073EB /* UploadImageToComputer */ = {
 			isa = PBXGroup;
 			children = (
-				18329CC21E10EF1A00786F3C /* ModelImageInfo.m */,
-				18329CC31E10EF1A00786F3C /* ModelImageInfo.h */,
-				18329CC41E10EF1A00786F3C /* ViewController.m */,
-				18329CC61E10EF1A00786F3C /* AppDelegate.h */,
-				18329CC71E10EF1A00786F3C /* AppDelegate.m */,
-				18329CC81E10EF1A00786F3C /* main.m */,
-				18329CC91E10EF1A00786F3C /* ViewController.h */,
-				18329CCA1E10EF1A00786F3C /* Base.lproj */,
-				18329CD11E10EF1A00786F3C /* Assets.xcassets */,
-				18329CD21E10EF1A00786F3C /* Info.plist */,
-				189354641E0BA1FD006073EB /* Main.storyboard */,
-				189354691E0BA1FD006073EB /* LaunchScreen.storyboard */,
+				18329CDF1E10F63600786F3C /* AppDelegate.h */,
+				18329CE01E10F63600786F3C /* AppDelegate.m */,
+				18329CE11E10F63600786F3C /* Info.plist */,
+				18329CE21E10F63600786F3C /* ModelImageInfo.h */,
+				18329CE31E10F63600786F3C /* ModelImageInfo.m */,
+				18329CE41E10F63600786F3C /* ViewController.h */,
+				18329CE51E10F63600786F3C /* ViewController.m */,
+				18329CE71E10F63600786F3C /* main.m */,
+				18329CE81E10F63600786F3C /* Assets.xcassets */,
+				18329CE91E10F63600786F3C /* Base.lproj */,
 				1893545B1E0BA1FD006073EB /* Supporting Files */,
 			);
-			name = UploadImageToComputer;
-			path = UploadIphoneImageToComputer;
+			path = UploadImageToComputer;
 			sourceTree = "<group>";
 		};
 		1893545B1E0BA1FD006073EB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1893545C1E0BA1FD006073EB /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -119,6 +109,7 @@
 			children = (
 				189354731E0BA89C006073EB /* Photos.framework */,
 				DFCFC9155EBDE9E90CEE2F00 /* libPods-UploadIphoneImageToComputer.a */,
+				5A761BB55D47193C7E4D3967 /* libPods-UploadImageToComputer.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,8 +117,8 @@
 		BC482E1653F0FE84D8A58225 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				84E965E54C90166FB66803B6 /* Pods-UploadIphoneImageToComputer.debug.xcconfig */,
-				D0D97E472478D0DFB58304F5 /* Pods-UploadIphoneImageToComputer.release.xcconfig */,
+				18329CF71E10F6B900786F3C /* Pods-UploadImageToComputer.release.xcconfig */,
+				18329CF81E10F6B900786F3C /* Pods-UploadImageToComputer.debug.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -193,12 +184,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18329CDA1E10EF1A00786F3C /* Main.storyboard in Resources */,
-				18329CDD1E10EF1A00786F3C /* Info.plist in Resources */,
-				1893546B1E0BA1FD006073EB /* LaunchScreen.storyboard in Resources */,
-				18329CD91E10EF1A00786F3C /* LaunchScreen.storyboard in Resources */,
-				18329CDC1E10EF1A00786F3C /* Assets.xcassets in Resources */,
-				189354661E0BA1FD006073EB /* Main.storyboard in Resources */,
+				18329CFA1E10F6B900786F3C /* Pods-UploadImageToComputer.debug.xcconfig in Resources */,
+				18329CF61E10F63600786F3C /* Main.storyboard in Resources */,
+				18329CF91E10F6B900786F3C /* Pods-UploadImageToComputer.release.xcconfig in Resources */,
+				18329CF51E10F63600786F3C /* LaunchScreen.storyboard in Resources */,
+				18329CF41E10F63600786F3C /* Assets.xcassets in Resources */,
+				18329CEF1E10F63600786F3C /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +208,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UploadIphoneImageToComputer/Pods-UploadIphoneImageToComputer-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UploadImageToComputer/Pods-UploadImageToComputer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4A28BE618EB4D553E289BA82 /* [CP] Copy Pods Resources */ = {
@@ -232,7 +223,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UploadIphoneImageToComputer/Pods-UploadIphoneImageToComputer-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UploadImageToComputer/Pods-UploadImageToComputer-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B6D58EAD1F5D75D8C34FA42E /* [CP] Check Pods Manifest.lock */ = {
@@ -257,47 +248,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18329CD51E10EF1A00786F3C /* ViewController.m in Sources */,
-				18329CD41E10EF1A00786F3C /* ModelImageInfo.m in Sources */,
-				1893545D1E0BA1FD006073EB /* main.m in Sources */,
-				18329CD81E10EF1A00786F3C /* main.m in Sources */,
-				18329CD71E10EF1A00786F3C /* AppDelegate.m in Sources */,
+				18329CF11E10F63600786F3C /* ViewController.m in Sources */,
+				18329CEE1E10F63600786F3C /* AppDelegate.m in Sources */,
+				18329CF31E10F63600786F3C /* main.m in Sources */,
+				18329CF01E10F63600786F3C /* ModelImageInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		18329CCB1E10EF1A00786F3C /* LaunchScreen.storyboard */ = {
+		18329CEA1E10F63600786F3C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				18329CCC1E10EF1A00786F3C /* Base */,
+				18329CEB1E10F63600786F3C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		18329CCD1E10EF1A00786F3C /* Main.storyboard */ = {
+		18329CEC1E10F63600786F3C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				18329CCE1E10EF1A00786F3C /* Base */,
+				18329CED1E10F63600786F3C /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		189354641E0BA1FD006073EB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				189354651E0BA1FD006073EB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		189354691E0BA1FD006073EB /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1893546A1E0BA1FD006073EB /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -395,11 +369,11 @@
 		};
 		189354701E0BA1FD006073EB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84E965E54C90166FB66803B6 /* Pods-UploadIphoneImageToComputer.debug.xcconfig */;
+			baseConfigurationReference = 18329CF81E10F6B900786F3C /* Pods-UploadImageToComputer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = UploadIphoneImageToComputer/Info.plist;
+				INFOPLIST_FILE = UploadImageToComputer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coco.UploadImageToComputer;
@@ -410,11 +384,11 @@
 		};
 		189354711E0BA1FD006073EB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0D97E472478D0DFB58304F5 /* Pods-UploadIphoneImageToComputer.release.xcconfig */;
+			baseConfigurationReference = 18329CF71E10F6B900786F3C /* Pods-UploadImageToComputer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = UploadIphoneImageToComputer/Info.plist;
+				INFOPLIST_FILE = UploadImageToComputer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coco.UploadImageToComputer;
