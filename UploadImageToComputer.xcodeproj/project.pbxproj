@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		18329CD41E10EF1A00786F3C /* ModelImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 18329CC21E10EF1A00786F3C /* ModelImageInfo.m */; };
 		18329CD51E10EF1A00786F3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18329CC41E10EF1A00786F3C /* ViewController.m */; };
-		18329CD61E10EF1A00786F3C /* hello.png in Resources */ = {isa = PBXBuildFile; fileRef = 18329CC51E10EF1A00786F3C /* hello.png */; };
 		18329CD71E10EF1A00786F3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18329CC71E10EF1A00786F3C /* AppDelegate.m */; };
 		18329CD81E10EF1A00786F3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18329CC81E10EF1A00786F3C /* main.m */; };
 		18329CD91E10EF1A00786F3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18329CCB1E10EF1A00786F3C /* LaunchScreen.storyboard */; };
@@ -27,7 +26,6 @@
 		18329CC21E10EF1A00786F3C /* ModelImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModelImageInfo.m; path = "../../../../../Users/apple/Documents/hello swift/2016.11/UploadIphoneImageToComputer/UploadIphoneImageToComputer/ModelImageInfo.m"; sourceTree = "<group>"; };
 		18329CC31E10EF1A00786F3C /* ModelImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModelImageInfo.h; path = "../../../../../Users/apple/Documents/hello swift/2016.11/UploadIphoneImageToComputer/UploadIphoneImageToComputer/ModelImageInfo.h"; sourceTree = "<group>"; };
 		18329CC41E10EF1A00786F3C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "../../../../../Users/apple/Documents/hello swift/2016.11/UploadIphoneImageToComputer/UploadIphoneImageToComputer/ViewController.m"; sourceTree = "<group>"; };
-		18329CC51E10EF1A00786F3C /* hello.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hello.png; path = "../../../../../Users/apple/Documents/hello swift/2016.11/UploadIphoneImageToComputer/UploadIphoneImageToComputer/hello.png"; sourceTree = "<group>"; };
 		18329CC61E10EF1A00786F3C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "../../../../../Users/apple/Documents/hello swift/2016.11/UploadIphoneImageToComputer/UploadIphoneImageToComputer/AppDelegate.h"; sourceTree = "<group>"; };
 		18329CC71E10EF1A00786F3C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "../../../../../Users/apple/Documents/hello swift/2016.11/UploadIphoneImageToComputer/UploadIphoneImageToComputer/AppDelegate.m"; sourceTree = "<group>"; };
 		18329CC81E10EF1A00786F3C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "../../../../../Users/apple/Documents/hello swift/2016.11/UploadIphoneImageToComputer/UploadIphoneImageToComputer/main.m"; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 				18329CC21E10EF1A00786F3C /* ModelImageInfo.m */,
 				18329CC31E10EF1A00786F3C /* ModelImageInfo.h */,
 				18329CC41E10EF1A00786F3C /* ViewController.m */,
-				18329CC51E10EF1A00786F3C /* hello.png */,
 				18329CC61E10EF1A00786F3C /* AppDelegate.h */,
 				18329CC71E10EF1A00786F3C /* AppDelegate.m */,
 				18329CC81E10EF1A00786F3C /* main.m */,
@@ -199,7 +196,6 @@
 				18329CDA1E10EF1A00786F3C /* Main.storyboard in Resources */,
 				18329CDD1E10EF1A00786F3C /* Info.plist in Resources */,
 				1893546B1E0BA1FD006073EB /* LaunchScreen.storyboard in Resources */,
-				18329CD61E10EF1A00786F3C /* hello.png in Resources */,
 				18329CD91E10EF1A00786F3C /* LaunchScreen.storyboard in Resources */,
 				18329CDC1E10EF1A00786F3C /* Assets.xcassets in Resources */,
 				189354661E0BA1FD006073EB /* Main.storyboard in Resources */,
