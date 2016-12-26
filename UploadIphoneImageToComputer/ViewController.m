@@ -8,24 +8,20 @@
 
 #import "ViewController.h"
 #import <Photos/Photos.h>
-#import "CustomCollectionViewCell.h"
 #import <AFNetworking.h>
 #import "ModelImageInfo.h"
 #define SCREENWIDTH self.view.frame.size.width
 #define SCREENHEIGHT self.view.frame.size.height
 
-@interface ViewController ()<UICollectionViewDelegate ,UICollectionViewDataSource,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface ViewController ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 {
-    UICollectionViewFlowLayout *flowLayout;
-    UICollectionView *_collectionView;
-    UILabel *_urlTextView;
-    UIImageView *_imageview ;
     
     NSMutableArray *assetArray; //存储imageInfo
-    int picIndex ;
-    UILabel *lblTips;
     
-    UILabel *lblCurrentIndex;
+    int picIndex ; //检索的图片index
+    UILabel *lblTips;  //显示当前上传状态
+    
+    UILabel *lblCurrentIndex; //当前检索的位置显示
 }
 
 @end
@@ -49,21 +45,6 @@ static NSString *const footerId = @"footerId";
         // 这里便是无访问权限
         NSLog(@"无访问权限");
     }
-    
-//    [self loadCollectionView];
-//    [self loadData];
-//
-    //test upload video
-//    UIButton *uploadMovieBtn = [[UIButton alloc] initWithFrame:CGRectMake(10, 10, 150, 100)];
-//    
-//    
-//    [uploadMovieBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-//    
-//    [uploadMovieBtn setTitle:@"上传视频demo" forState:UIControlStateNormal];
-//    
-//    [uploadMovieBtn addTarget:self action:@selector(testUploadMovie) forControlEvents:UIControlEventTouchUpInside];
-//    [self.view addSubview:uploadMovieBtn];
-    
     
     UIButton *testBtn = [[UIButton alloc] initWithFrame:CGRectMake(200, 10, 150, 100)];
     
@@ -92,43 +73,6 @@ static NSString *const footerId = @"footerId";
     
     
 }
-//测试上传视频
--(void)testUploadMovie{
-    //    [assetArray removeAllObjects];
-    
-//    if(assetArray.count==0){
-//        return;
-//    }
-  
-
-//    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager] ;
-//    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-//    NSString *videoPath= [[NSBundle mainBundle] pathForResource:@"hello" ofType:@"m4v"];  // 这里直接强制
-//    NSData *videoData = [[NSData alloc] initWithContentsOfFile:videoPath];
-//    
-//    
-//    [manager POST:@"http://192.168.1.104:8081/upload" parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
-//        
-//        if(videoData){
-//            [formData appendPartWithFileData:videoData
-//                                        name:@"photos"
-//                                    fileName:@"video1.m4v"
-//                                    mimeType:@"video/x-m4v"];
-//        
-//        
-//        }
-//    } progress:^(NSProgress * _Nonnull uploadProgress) {
-//        float pecentvalue =uploadProgress.completedUnitCount*100/ uploadProgress.totalUnitCount;
-//        NSLog(@"上传进度 %f %%",pecentvalue);
-//        
-//    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//        NSLog(@"成功");
-//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-//        NSLog(@"失败----error --%@",[error description]);
-//    }];
-    
-    
-}
 
 - (IBAction)testUploadPictureInAlbum:(id)sender {
     lblTips.text =@"正在遍历相册";
@@ -141,23 +85,12 @@ static NSString *const footerId = @"footerId";
         NSLog(@"assetCollection.localizedTitle ---%@",assetCollection.localizedTitle);
         if ([assetCollection.localizedTitle isEqualToString:@"All Photos"])  {
             PHFetchResult *assetResult = [PHAsset fetchAssetsInAssetCollection:assetCollection options:[PHFetchOptions new]];
-            
-            
-            
-            
             [assetResult enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-               
-
                 if (idx >=picIndex+10){
                     *stop = YES;
                 }
                 if (idx>=picIndex&&idx<picIndex+10) {
-                    
-                  
-                
-                
-                
-                    NSLog(@"idx  %lu",(unsigned long)idx);
+                NSLog(@"idx  %lu",(unsigned long)idx);
                     
                     PHAsset *asset = (PHAsset *)obj;
                 
@@ -215,11 +148,6 @@ static NSString *const footerId = @"footerId";
     
  
     [self performSelector:@selector(uploadImageAndVideo) withObject:nil afterDelay:1.0f];
-
-    
-   
-    
-
 }
 -(void)uploadImageAndVideo{
     picIndex+=10;
@@ -326,178 +254,7 @@ static NSString *const footerId = @"footerId";
         }
     }];
 }
-- (void)loadCollectionView
-{
-    flowLayout = [[UICollectionViewFlowLayout alloc] init]; // 自定义的布局对象
-    //列距
-    flowLayout.minimumInteritemSpacing = 30;
-    //行距
-    flowLayout.minimumLineSpacing = 40;
-    //item大大小
-    flowLayout.itemSize = CGSizeMake((SCREENWIDTH-60)/3, 200);
-    //初始化
-    _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:flowLayout];
-    _collectionView.backgroundColor = [UIColor orangeColor];
-    _collectionView.dataSource = self;
-    _collectionView.delegate = self;
-    [self.view addSubview:_collectionView];
-    
-    // 注册cell、sectionHeader、sectionFooter
-    [_collectionView registerNib:[UINib nibWithNibName:@"CustomCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:cellId];
-//    [_collectionView registerClass:[CustomCollectionViewCell class] forCellWithReuseIdentifier:cellId];
-    [_collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:headerId];
-    [_collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:footerId];
-}
-#pragma mark - 获取相册内所有照片资源
-- (NSArray<PHAsset *> *)getAllAssetInPhotoAblumWithAscending:(BOOL)ascending
-{
-    NSMutableArray<PHAsset *> *assets = [NSMutableArray array];
-    
-    PHFetchOptions *option = [[PHFetchOptions alloc] init];
-    //ascending 为YES时，按照照片的创建时间升序排列;为NO时，则降序排列
-    option.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"creationDate" ascending:ascending]];
-    
-    PHFetchResult *result = [PHAsset fetchAssetsWithMediaType:PHAssetMediaTypeImage options:option];
-    
-    [result enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        PHAsset *asset = (PHAsset *)obj;
-        NSLog(@"照片名%@", [asset valueForKey:@"filename"]);
-        [assets addObject:asset];
-    }];
-    
-    return assets;
-}
--(void)loadData{
-    //创建可变数组,存储资源文件
-//    _array = [NSMutableArray array];
-//    
-//    [_array addObject:@"1"];
-//    [_collectionView reloadData];
-}
 
-
-#pragma mark ---- UICollectionViewDataSource
-
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
-{
-    return 1;
-}
-
-
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
-{
-    return 4;
-}
-
-
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    CustomCollectionViewCell *cell = [_collectionView dequeueReusableCellWithReuseIdentifier:cellId forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor purpleColor];
-    cell.imageview.image = [UIImage imageNamed:@"hello.png"];
-    
-    return cell;
-}
-
-
-
-
-#pragma mark ---- UICollectionViewDelegateFlowLayout
-
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    return (CGSize){100,100};
-}
-
-
-- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
-{
-    return UIEdgeInsetsMake(5, 5, 5, 5);
-}
-
-
-- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
-{
-    return 5.f;
-}
-
-
-- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
-{
-    return 5.f;
-}
-
-
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
-{
-    return (CGSize){SCREENWIDTH,44};
-}
-
-
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section
-{
-    return (CGSize){SCREENWIDTH,22};
-}
-
-
-
-
-#pragma mark ---- UICollectionViewDelegate
-
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    return YES;
-}
-
-// 点击高亮
-- (void)collectionView:(UICollectionView *)collectionView didHighlightItemAtIndexPath:(NSIndexPath *)indexPath
-{
-//    UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
-//    
-//    cell.backgroundColor = [UIColor greenColor];
-}
-
-
-// 选中某item
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    
-}
-
-
-//// 长按某item，弹出copy和paste的菜单
-//- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    return YES;
-//}
-
-//// 使copy和paste有效
-//- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(nullable id)sender
-//{
-//    if ([NSStringFromSelector(action) isEqualToString:@"copy:"] || [NSStringFromSelector(action) isEqualToString:@"paste:"])
-//    {
-//        return YES;
-//    }
-//    
-//    return NO;
-//}
-//
-////
-//- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(nullable id)sender
-//{
-//    if([NSStringFromSelector(action) isEqualToString:@"copy:"])
-//    {
-//        //        NSLog(@"-------------执行拷贝-------------");
-//        [_collectionView performBatchUpdates:^{
-//            [_section0Array removeObjectAtIndex:indexPath.row];
-//            [_collectionView deleteItemsAtIndexPaths:@[indexPath]];
-//        } completion:nil];
-//    }
-//    else if([NSStringFromSelector(action) isEqualToString:@"paste:"])
-//    {
-//        NSLog(@"-------------执行粘贴-------------");
-//    }
-//}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
