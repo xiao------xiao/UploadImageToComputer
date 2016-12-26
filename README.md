@@ -3,10 +3,10 @@
 
 基本信息:Xcode 8.1  基本库 Photos.framework 
 
-1>首先要在本机服务器，我采取的方法是安装nodejs，方便快捷，怎么安装就不说了,网上一大堆，项目中有我的本地nodejs文件，可以直接拿来用，uploadMultImage.js
+1>首先要开一个本机服务器，通过与本机服务器的连接来实现图片或视频的上传，我采取的方法是安装nodejs，方便快捷，怎么安装就不说了,网上一大堆，项目中有我的本地nodejs文件，可以直接拿来用，uploadMultImage.js
 
 2>开启服务器 ，具体操作:
-      在终端中，cd 到指定目录，然后 node  uploadMultImage.js 
+      在终端中，cd 到nodejs 文件存储目录，然后 node  uploadMultImage.js 
       终端会给出 应用实例，访问地址为 http://:::8081 信息，这是本地服务器已经开启了，按住control ＋c 键可以关闭服务器
    
 3>服务器开启了，接下来就是客户端了
