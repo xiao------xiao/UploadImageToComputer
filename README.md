@@ -1,0 +1,2 @@
+# UploadIphoneImageToComputer
+同步Iphone手机图片到电脑是不是很慢呢，通过这个demo可以实现1分钟同步所有Iphone图片和视频，还能删除手机里的原图，大大缩减手机内存。
